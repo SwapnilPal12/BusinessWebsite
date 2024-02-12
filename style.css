@@ -9,42 +9,51 @@
   .next {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Adjust the gap for smaller screens */
+    gap: 20px;
+    /* Adjust the gap for smaller screens */
     padding-left: 5%;
     padding-right: 5%;
   }
-
-  .gridlines {
-    width: 80%; /* Adjust width for smaller screens */
-    height: 70%;
-    margin-left: 10%;
+  .main .gridlines {
+    width: 40vh;
+    height: 50vh;
+    margin-left: 1rem;
     margin-top: 5%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(rgba(100, 148, 237, 0.555) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(100, 148, 237, 0.63) 1px, transparent 1px);
   }
 
   h1 {
-    font-size: 3rem; /* Adjust font size for smaller screens */
+    font-size: 3rem;
   }
 
   .downarrow {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.5rem;
   }
 
   .cta:hover {
-    font-size: 1.6rem; /* Adjust font size for smaller screens */
+    font-size: 1.6rem;
   }
 
   .chooseus img {
-    height: 30vh; /* Adjust height for smaller screens */
-    width: 60vw; /* Adjust width for smaller screens */
+    height: 30vh;
+    width: 60vw;
   }
 
   .abc {
-    flex-direction: column; /* Adjust flex direction for smaller screens */
+    flex-direction: column;
   }
 
   .write {
-    padding: 2%; /* Adjust padding for smaller screens */
-    font-size: 0.8rem; /* Adjust font size for smaller screens */
+    padding: 2%;
+    /* Adjust padding for smaller screens */
+    font-size: 0.8rem;
+    /* Adjust font size for smaller screens */
   }
 
   .crds {
@@ -53,29 +62,35 @@
   }
 
   .feed {
-    width: 80px; /* Adjust width for smaller screens */
-    height: 80px; /* Adjust height for smaller screens */
+    width: 80px;
+    /* Adjust width for smaller screens */
+    height: 80px;
+    /* Adjust height for smaller screens */
   }
 
   .card-client {
-    width: 10rem; /* Adjust width for smaller screens */
+    width: 10rem;
+    /* Adjust width for smaller screens */
   }
 }
 
 /* Add a media query for medium screens */
 @media (max-width: 952px) {
   label.logo {
-    font-size: 25px; /* Adjust font size for medium screens */
-    padding-left: 20px; /* Adjust padding for medium screens */
+    font-size: 25px;
+    /* Adjust font size for medium screens */
+    padding-left: 20px;
+    /* Adjust padding for medium screens */
   }
 
   nav ul li a {
-    font-size: 15px; /* Adjust font size for medium screens */
+    font-size: 15px;
+    /* Adjust font size for medium screens */
   }
 }
 
 /* Add a media query for smaller screens */
-@media (max-width: 858px) {
+@media (max-width: 768px) {
   .checkbtn {
     display: block;
   }
@@ -91,11 +106,17 @@
   }
 
   nav ul li a {
-    font-size: 16px; /* Adjust font size for smaller screens */
+    font-size: 16px;
   }
 
   .cta:hover {
-    font-size: 1.8rem; /* Adjust font size for smaller screens */
+    font-size: 1.8rem;
+  }
+  label.logo img {
+    width: 150px;
+    height: auto ;
+    margin-left: 0;
+    font-weight: bold;
   }
 }
 
@@ -118,25 +139,26 @@ body {
 .main {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom,rgba(0, 0, 255, 0.096), black) transparent;
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.096), black) transparent;
 }
-.main h1{
+
+.main h1 {
   font-size: 4rem;
 }
 
 .gridlines {
   border-radius: 50%;
-  width: 400px; 
+  width: 400px;
   height: 350px;
   margin-left: 5rem;
   margin-top: 4.8rem;
   color: wheat;
-  position:absolute ;
+  position: absolute;
   z-index: -1;
   background-size: 60px 60px;
   background-image:
-  linear-gradient(rgba(100, 148, 237, 0.555) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(100, 148, 237, 0.63) 1px,transparent 1px);
+    linear-gradient(rgba(100, 148, 237, 0.555) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 148, 237, 0.63) 1px, transparent 1px);
 }
 
 
@@ -193,69 +215,24 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 952px) {
-  label.logo {
-    font-size: 30px;
-    padding-left: 50px;
-  }
-
-  nav ul li a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 858px) {
-  .checkbtn {
-    display: block;
-  }
-
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #ffffff;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  
-  nav ul li a {
-    font-size: 20px;
-  }
-  
-  a:hover,
-  a.active {
-    background: none;
-    color: cornflowerblue;
-  }
-
-  #check:checked~ul {
-    left: 0;
-  }
-}
-
 
 .btn1 {
   padding-left: 5%;
   padding-top: 3%;
 }
-.cta{
-  background: white; font-size: 1.5rem;
+
+.cta {
+  background: white;
+  font-size: 1.5rem;
   box-shadow: 4px 4px 0px 0px #05ffea;
   cursor: pointer;
-  border:2px solid #000000;
+  border: 2px solid #000000;
   border-radius: 5px;
   padding: 0.5rem;
 }
-.cta:hover{
-  font-size:1.7rem ;
+
+.cta:hover {
+  font-size: 1.7rem;
   transition: 0.1s ease-in-out;
 }
 
@@ -373,6 +350,7 @@ h1 {
   overflow: hidden;
   color: black;
 }
+
 .next {
   display: flex;
   align-items: center;
@@ -463,24 +441,25 @@ h1 {
 }
 
 .abc {
-  display:flex;
+  display: flex;
   box-sizing: border-box;
 }
 
-.img1{
+.img1 {
   width: 50vw;
   position: relative;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
   text-align: center;
   /* border: 5px solid red; */
 }
 
-.img1 img{
+.img1 img {
   position: relative;
   width: auto;
   image-orientation: inherit;
 }
+
 .write {
   height: auto;
   width: auto;
@@ -493,10 +472,11 @@ h1 {
 .crds {
   display: flex;
   padding-top: 1%;
-  gap:1.5rem;
-  align-items:start;
+  gap: 1.5rem;
+  align-items: start;
   padding-bottom: 0%;
 }
+
 @media screen and (max-width: 768px) {
   .abc {
     flex-direction: column;
@@ -511,7 +491,8 @@ h1 {
     width: 100%;
     padding: 0;
   }
-  .writup{
+
+  .writup {
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
@@ -521,6 +502,7 @@ h1 {
     color: #ffff;
   }
 }
+
 .chooseus h1 {
   text-align: center;
 }
@@ -741,8 +723,11 @@ h1 {
   padding-top: 5%;
 }
 
-@media screen and (max-width: 768px){
-  .cds,.cds1, .cds2{
+@media screen and (max-width: 768px) {
+
+  .cds,
+  .cds1,
+  .cds2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -750,11 +735,12 @@ h1 {
     padding-right: 10%;
     padding-top: 5%;
   }
-  .card-if{
+
+  .card-if {
     position: relative;
     width: 110px;
     height: 100px;
-    background:black;
+    background: black;
     border: 2px black solid;
     padding: 0rem;
     margin: 2rem;
@@ -925,11 +911,11 @@ footer {
   color: black;
 }
 
-.chooseus .abc .write .crds .card-if{
+.chooseus .abc .write .crds .card-if {
   position: relative;
   width: 110px;
   height: 100px;
-  background:black;
+  background: black;
   border: 2px black solid;
   padding: 0rem;
   border-radius: 0rem;
@@ -937,7 +923,7 @@ footer {
   color: black;
 }
 
-.crds .card-if img{
+.crds .card-if img {
   height: 96px;
   width: 100px;
 
@@ -1092,13 +1078,14 @@ hr {
   text-align: center;
 }
 
-.nicebutton{
+.nicebutton {
   padding: 2rem;
   margin: auto;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
+
 .nice {
   /* background: aqua; */
   background: #28CBFF;
@@ -1212,8 +1199,9 @@ textarea::placeholder {
     align-items: center;
     min-width: 100%;
   }
-  
+
 }
+
 .usecard {
   background-color: #fff;
   border-radius: 8px;
@@ -1257,17 +1245,17 @@ textarea::placeholder {
 
 
 /* Grid lines */
-.chooseus .gridlines{
+.chooseus .gridlines {
   border-radius: 50%;
-  width: 100%; 
+  width: 100%;
   height: 90%;
   margin-left: 0rem;
-  margin-top:0rem;
+  margin-top: 0rem;
   color: wheat;
-  position:absolute ;
+  position: absolute;
   z-index: -1;
   background-size: 60px 60px;
   background-image:
-  linear-gradient(rgba(46, 46, 46, 0.555) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(66, 66, 66, 0.63) 1px,transparent 1px);
+    linear-gradient(rgba(46, 46, 46, 0.555) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(66, 66, 66, 0.63) 1px, transparent 1px);
 }
