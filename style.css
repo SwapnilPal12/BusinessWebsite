@@ -72,9 +72,9 @@ p{
     font-size: 1.6rem;
   }
 
-  .chooseus img {
-    height: 30vh;
-    width: 60vw;
+  .chooseus .abc .img1 img {
+    height: 20%;
+    width: 190%;
   }
 
   .abc {
@@ -87,15 +87,15 @@ p{
 
   .write {
     padding: 2%;
-    /* Adjust padding for smaller screens */
     font-size: 0.8rem;
-    /* Adjust font size for smaller screens */
+  }
+  .crds img{
+    margin-right: 8%;
   }
 
   .crds {
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 120%;
+    
+    width: 100%;
     overflow: hidden;
   }
 
@@ -195,16 +195,9 @@ p{
     overflow: hidden;
   }
 
-  .img1 {
-    width: 100%;
-    margin-right: 20%;
-    display: none;
-  }
   
-  .img1 img {
-    position: relative;
-    width: 100px;
-  }
+  
+
 
   .write {
     width: 100%;
