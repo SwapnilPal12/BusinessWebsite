@@ -37,6 +37,8 @@ p{
     /* Adjust the gap for smaller screens */
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 5%;
+    overflow: hidden;
   }
   .main .gridlines {
     width: 40vh;
@@ -78,6 +80,10 @@ p{
   .abc {
     flex-direction: column;
   }
+  .pra{
+    width: 200%;
+    overflow: hidden;
+  }
 
   .write {
     padding: 2%;
@@ -89,6 +95,8 @@ p{
   .crds {
     padding-left: 5%;
     padding-right: 5%;
+    width: 120%;
+    overflow: hidden;
   }
 
   .feed {
@@ -102,33 +110,78 @@ p{
     width: 10rem;
     /* Adjust width for smaller screens */
   }
-  .cds,
-  .cds1,
-  .cds2 {
+  .cds{
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  .cds .plus{
+    width: 150px;
+    height: 50px;
+    margin-left: 8%;
+    margin-top: 5%;
+  }
+  .bg2{
+    width: 100%;
+    overflow: hidden;
+  }
+  .bgchange{
+    overflow: hidden;
+  }
+  .spotlight .plu{
+    padding-right: 60%;
+  }
+  .hme ul{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
+  }
+  .hme ul li{
+    margin-top: 3%;
+  }
+  .spotlight{
+    width: 250%;
+    overflow: hidden;
   }
   .ourClients{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    row-gap: 0.2rem;
     width: 250%;
-    padding-right: 70%;
     overflow: hidden;
   }
   .usClients{
     width: 250%;
     overflow: hidden;
   }
+  .cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .mem1{
+    display: flex;
+    flex-direction: column;
+  }
+  .mem2{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mem3{
+    display: flex;
+    flex-direction: column;
+  }
+  .gems{
+    width: 100%;
+    overflow: hidden;
+  }
+  
 
   .card-if {
     width: 90px;
     height: 50px;
     background: black;
+    margin-bottom: 5%;
     border: 2px black solid;
-    padding: 0rem;
-    margin: 2rem;
     border-radius: 0rem;
     overflow: hidden;
     color: black;
@@ -137,9 +190,20 @@ p{
     flex-direction: column;
     width: 100%;
   }
+  .chooseus{
+    width: 100%;
+    overflow: hidden;
+  }
 
   .img1 {
-    width: 50%;
+    width: 100%;
+    margin-right: 20%;
+    display: none;
+  }
+  
+  .img1 img {
+    position: relative;
+    width: 100px;
   }
 
   .write {
@@ -152,7 +216,7 @@ p{
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     color: #ffff;
   }
@@ -160,13 +224,13 @@ p{
     display: block;
   }
 
-  ul {
+  nav ul {
     left: 0;
   }
 
   nav ul li {
     display: block;
-    padding-right: 35%;
+    padding-right: 5%;
     line-height: 30px;
   }
 
@@ -304,7 +368,7 @@ a.active,a:hover{
   .checkbtn{
     display: block;
   }
-  ul{
+  nav ul{
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -810,8 +874,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 17%;
-  padding-right: 17%;
+  padding-left: 14%;
+  padding-right: 14%;
   padding-top: 5%;
 }
 
@@ -1305,4 +1369,7 @@ textarea::placeholder {
   background-image:
     linear-gradient(rgba(46, 46, 46, 0.555) 1px, transparent 1px),
     linear-gradient(90deg, rgba(66, 66, 66, 0.63) 1px, transparent 1px);
+}
+.cds2{
+  padding-bottom: 5%;
 }
