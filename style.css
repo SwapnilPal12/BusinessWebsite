@@ -1,12 +1,15 @@
 @font-face {
   font-family: 'trap';
   src: url('/Trap_V1.1/Trap-SemiBold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight:lighter;
+  font-style:normal;
 }
-p{
-  font-size: 18px;
+
+p {
+  font-size: 14px;  
+  
 }
+
 @media screen and (max-width: 768px) {
   .users {
     display: flex;
@@ -15,7 +18,8 @@ p{
     padding-right: 5%;
     padding-top: 5%;
   }
-  body{
+
+  body {
     height: 100%;
     width: 100%;
   }
@@ -30,6 +34,7 @@ p{
     align-items: center;
     min-width: 100%;
   }
+
   .next {
     display: flex;
     flex-direction: column;
@@ -40,6 +45,7 @@ p{
     padding-bottom: 5%;
     overflow: hidden;
   }
+
   .main .gridlines {
     width: 40vh;
     height: 74vh;
@@ -53,16 +59,19 @@ p{
       linear-gradient(rgba(100, 148, 237, 0.555) 1px, transparent 1px),
       linear-gradient(90deg, rgba(100, 148, 237, 0.63) 1px, transparent 1px);
   }
-  .sub-text{
+
+  .sub-text {
     padding-right: 5%;
   }
-  p{
-    font-size: 18px;
+
+  p {
+    font-size: 16px;
   }
 
   h1 {
     font-size: 3rem;
   }
+
   .chooseus .abc .write .crds .card-if {
     position: relative;
     width: 90px;
@@ -74,7 +83,7 @@ p{
     overflow: hidden;
     color: black;
   }
-  
+
   .downarrow {
     font-size: 1.5rem;
   }
@@ -91,7 +100,8 @@ p{
   .abc {
     flex-direction: column;
   }
-  .pra{
+
+  .pra {
     width: 200%;
     overflow: hidden;
   }
@@ -108,7 +118,7 @@ p{
     padding-left: 2%;
   }
 
-  .crds .card-if{
+  .crds .card-if {
     width: 90px;
     height: 60px;
   }
@@ -121,39 +131,48 @@ p{
   .card-client {
     width: 10rem;
   }
-  .cds{
+
+  .cds {
     width: 100%;
     padding-bottom: 5%;
   }
-  .cds .plus{
+
+  .cds .plus {
     width: 110px;
     height: 110px;
     margin-left: 8%;
     margin-top: 5%;
   }
-  .bg2{
+
+  .bg2 {
     width: 100%;
     overflow: hidden;
   }
-  .bgchange{
+
+  .bgchange {
     overflow: hidden;
   }
-  .spotlight .plu{
+
+  .spotlight .plu {
     padding-right: 60%;
   }
-  .hme ul{
+
+  .hme ul {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .hme ul li{
+
+  .hme ul li {
     margin-top: 3%;
   }
-  .spotlight{
+
+  .spotlight {
     width: 250%;
     overflow: hidden;
   }
-  .ourClients{
+
+  .ourClients {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -161,31 +180,37 @@ p{
     width: 250%;
     overflow: hidden;
   }
-  .usClients{
+
+  .usClients {
     width: 250%;
     overflow: hidden;
   }
-  .cards{
+
+  .cards {
     display: flex;
     flex-direction: column;
   }
-  .mem1{
+
+  .mem1 {
     display: flex;
     flex-direction: column;
   }
-  .mem2{
+
+  .mem2 {
     display: flex;
     flex-direction: column-reverse;
   }
-  .mem3{
+
+  .mem3 {
     display: flex;
     flex-direction: column;
   }
-  .gems{
+
+  .gems {
     width: 100%;
     overflow: hidden;
   }
-  
+
 
   .card-if {
     width: 90px;
@@ -197,17 +222,19 @@ p{
     overflow: hidden;
     color: black;
   }
+
   .abc {
     flex-direction: column;
     width: 100%;
   }
-  .chooseus{
+
+  .chooseus {
     width: 100%;
     overflow: hidden;
   }
 
-  
-  
+
+
 
 
   .write {
@@ -224,6 +251,7 @@ p{
     text-align: left;
     color: #ffff;
   }
+
   .checkbtn {
     display: block;
   }
@@ -248,12 +276,14 @@ p{
   .cta:hover {
     font-size: 1.8rem;
   }
+
   label.logo img {
     width: 150px;
-    height: auto ;
+    height: auto;
     margin-left: 0;
     font-weight: bold;
   }
+
   label.logo {
     padding-left: 5px;
     /* Adjust padding for medium screens */
@@ -296,7 +326,7 @@ body {
 .main {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 174, 255, 0.137), black) transparent;
+  background: linear-gradient(to bottom, rgba(0, 174, 255, 0.219), rgba(3, 108, 156, 0)) transparent;
 }
 
 .main h1 {
@@ -308,50 +338,57 @@ body {
   width: 400px;
   height: 350px;
   margin-left: 5rem;
-  margin-top: 4.8rem;
+  margin-top: 4rem;
   color: wheat;
   position: absolute;
   z-index: -1;
   background-size: 60px 60px;
   background-image:
-    linear-gradient(rgba(100, 148, 237, 0.555) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(100, 148, 237, 0.63) 1px, transparent 1px);
+    linear-gradient(rgba(100, 148, 237, 0.24) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 148, 237, 0.432) 1px, transparent 1px);
 }
 
 
-nav{
+nav {
   background: #000000;
   height: 80px;
   width: 100%;
 }
-label.logo{
+
+label.logo {
   color: white;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
 }
-nav ul{
+
+nav ul {
   float: right;
   margin-right: 20px;
 }
-nav ul li{
+
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
   color: white;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.active,a:hover{
+
+a.active,
+a:hover {
   background: #1b9bff;
   transition: .5s;
 }
-.checkbtn{
+
+.checkbtn {
   font-size: 30px;
   color: white;
   float: right;
@@ -360,24 +397,29 @@ a.active,a:hover{
   cursor: pointer;
   display: none;
 }
-#check{
+
+#check {
   display: none;
 }
-@media (max-width: 952px){
-  label.logo{
+
+@media (max-width: 952px) {
+  label.logo {
     font-size: 30px;
     padding-left: 10px;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 16px;
     z-index: 1;
   }
 }
-@media (max-width: 858px){
-  .checkbtn{
+
+@media (max-width: 858px) {
+  .checkbtn {
     display: block;
   }
-  nav ul{
+
+  nav ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -388,21 +430,26 @@ a.active,a:hover{
     transition: all .5s;
     z-index: 1;
   }
-  nav ul li{
+
+  nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
     z-index: 1;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 20px;
     z-index: 1;
   }
-  a:hover,a.active{
+
+  a:hover,
+  a.active {
     background: none;
     color: #0082e6;
   }
-  #check:checked ~ ul{
+
+  #check:checked~ul {
     left: 0;
   }
 }
@@ -445,6 +492,7 @@ h1 {
 .sub-text {
   padding-left: 5%;
   padding-top: 1%;
+  font-size: 16px;
 }
 
 
@@ -886,7 +934,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   padding-left: 14%;
   padding-right: 14%;
   padding-top: 5%;
@@ -1268,12 +1316,14 @@ hr {
   border-radius: 10px;
   text-align: left;
 }
-@media screen  and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
   .form1 {
     width: 100%;
     padding: 4%;
   }
-  .submitbutton{
+
+  .submitbutton {
     margin: 4%;
   }
 }
@@ -1394,9 +1444,11 @@ textarea::placeholder {
     linear-gradient(rgba(46, 46, 46, 0.555) 1px, transparent 1px),
     linear-gradient(90deg, rgba(66, 66, 66, 0.63) 1px, transparent 1px);
 }
-.cds2{
+
+.cds2 {
   padding-bottom: 5%;
 }
-.prop{
+
+.prop {
   padding-top: 2%;
 }
