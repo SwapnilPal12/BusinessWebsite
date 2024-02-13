@@ -63,6 +63,15 @@ p{
   h1 {
     font-size: 3rem;
   }
+  .chooseus .abc .write .crds .card-if img{
+    width: 100px;
+    height: 90px;
+    overflow: hidden;
+  }
+  .chooseus .abc .write .crds .card-if{
+    width: 120px;
+    height: 130px;
+  }
 
   .downarrow {
     font-size: 1.5rem;
@@ -89,12 +98,8 @@ p{
     padding: 2%;
     font-size: 0.8rem;
   }
-  .crds img{
-    margin-right: 8%;
-  }
 
   .crds {
-    
     width: 100%;
     overflow: hidden;
   }
@@ -219,16 +224,19 @@ p{
 
   nav ul {
     left: 0;
+    z-index: 1;
   }
 
   nav ul li {
     display: block;
     padding-right: 5%;
     line-height: 30px;
+    z-index: 10;
   }
 
   nav ul li a {
     font-size: 16px;
+    z-index: 1;
   }
 
   .cta:hover {
@@ -259,6 +267,7 @@ p{
   nav ul li a {
     font-size: 15px;
     /* Adjust font size for medium screens */
+    z-index: 1;
   }
 }
 
@@ -355,6 +364,7 @@ a.active,a:hover{
   }
   nav ul li a{
     font-size: 16px;
+    z-index: 1;
   }
 }
 @media (max-width: 858px){
@@ -370,14 +380,17 @@ a.active,a:hover{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    z-index: 1;
   }
   nav ul li{
     display: block;
     margin: 50px 0;
     line-height: 30px;
+    z-index: 1;
   }
   nav ul li a{
     font-size: 20px;
+    z-index: 1;
   }
   a:hover,a.active{
     background: none;
