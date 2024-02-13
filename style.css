@@ -64,13 +64,13 @@ p{
     font-size: 3rem;
   }
   .chooseus .abc .write .crds .card-if img{
-    width: 50px;
-    height: 30px;
     overflow: hidden;
+    width: 70px;
+    height: 70px;
   }
   .chooseus .abc .write .crds .card-if{
-    width: 70px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
   }
 
   .downarrow {
