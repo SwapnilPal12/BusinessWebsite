@@ -34,6 +34,10 @@ p {
     align-items: center;
     min-width: 100%;
   }
+  p{
+    margin-top: 4%;
+    margin-bottom: 6%;
+  }
 
   .next {
     display: flex;
@@ -68,7 +72,7 @@ p {
     font-size: 16px;
   }
 
-  h1 {
+  .main h1 {
     font-size: 3rem;
   }
 
@@ -329,9 +333,7 @@ body {
   background: linear-gradient(to bottom, rgba(0, 174, 255, 0.219), rgba(3, 108, 156, 0)) transparent;
 }
 
-.main h1 {
-  font-size: 4rem;
-}
+
 
 .gridlines {
   border-radius: 50%;
@@ -485,7 +487,7 @@ h1 {
   padding-top: 5%;
   padding-left: 5%;
   padding: auto;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: 'trap';
 }
 
